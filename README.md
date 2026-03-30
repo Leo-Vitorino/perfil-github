@@ -1,50 +1,128 @@
-# Welcome to your Expo app 👋
+# 📱 GitHub Profile App (React Native)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo mobile desenvolvido com **React Native + TypeScript**, inspirado no layout de perfis do GitHub.
 
-## Get started
+O objetivo do projeto é simular uma tela de perfil de usuário, exibindo informações como dados pessoais, estatísticas e repositórios fixados, aplicando conceitos de componentização, tipagem e estilização.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🚀 Tecnologias utilizadas
 
-2. Start the app
+* React Native
+* Expo
+* TypeScript
+* StyleSheet (estilização nativa)
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📸 Funcionalidades
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+* 👤 Exibição de perfil (foto, nome e username)
+* 📝 Biografia do usuário
+* 📍 Localização
+* 📊 Estatísticas (repositórios, seguidores, seguindo)
+* 📦 Lista de repositórios fixados
+* 🎨 Interface inspirada no GitHub (tema dark)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 🧱 Estrutura do projeto
 
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+src/
+ ├── components/
+ │    ├── ProfileHeader.tsx
+ │    ├── ProfileInfo.tsx
+ │    ├── Stats.tsx
+ │    └── RepoCard.tsx
+ │
+ ├── screens/
+ │    └── ProfileScreen.tsx
+ │
+ ├── data/
+ │    └── user.ts
+ │
+ └── types/
+      └── User.ts
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## ▶️ Como executar o projeto
 
-To learn more about developing your project with Expo, look at the following resources:
+### 1. Clonar o repositório
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```
+git clone https://github.com/seu-usuario/seu-repo.git
+```
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+### 2. Instalar dependências
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```
+npm install
+```
+
+---
+
+### 3. Rodar o projeto
+
+```
+npm start
+```
+
+---
+
+### 4. Executar no celular
+
+* Instale o app **Expo Go**
+* Conecte o celular na mesma rede Wi-Fi
+* Escaneie o QR Code exibido no terminal
+
+---
+
+## 🎨 Customização
+
+Os dados do usuário podem ser alterados em:
+
+```
+src/data/user.ts
+```
+
+É possível modificar:
+
+* Nome
+* Username
+* Bio
+* Foto
+* Repositórios
+* Estatísticas
+
+---
+
+## 📚 Objetivo acadêmico
+
+Este projeto foi desenvolvido como atividade prática da disciplina **PDMI**, com foco em:
+
+* Componentização em React Native
+* Tipagem com TypeScript
+* Organização de código
+* Construção de interfaces mobile
+
+---
+
+## 💡 Melhorias futuras
+
+* Integração com API do GitHub
+* Animações na interface
+* Sistema de navegação
+* Tema claro/escuro dinâmico
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Leonardo Vitorino**
+
+---
